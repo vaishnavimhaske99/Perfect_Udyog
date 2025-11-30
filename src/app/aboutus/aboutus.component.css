@@ -1,0 +1,87 @@
+.team-section {
+  padding: 60px 20px;
+  background-color: #fffcfa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+/* Left: Team Photo */
+.team-photo img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Right: Team Information */
+.team-info {
+  flex: 1;
+}
+
+.team-section h2 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #5d391d;
+  background-color: rgb(255, 170, 0);
+  border-radius: 3px;
+  text-align: center;
+}
+.team-info h1{
+    font-size: 45px;
+  margin-bottom: 20px;
+  color: #5d391d;
+
+  text-align: center;
+
+}
+
+.team-info p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .team-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-photo img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .team-info {
+    flex: none;
+  }
+}
+.read-more-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    margin-top: 20px;
+    background-color: #f61b0f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #f2f262;
+    transform: translateY(-2px);
+}
+

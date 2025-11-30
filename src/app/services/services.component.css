@@ -1,0 +1,67 @@
+ .services-area {
+        padding: 50px 20px 20px;
+        background: #f9f9f9;
+        text-align: center;
+    }
+    .services-area h1 {
+        font-size: 36px;
+        margin-bottom: 40px;
+        color: #333;
+    }
+
+    /* Services Slider */
+    .services-slider {
+        display: flex;
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 20px;
+    }
+    .service-card {
+        flex: 0 0 300px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        scroll-snap-align: start;
+        transition: transform 0.3s;
+    }
+    .service-card:hover {
+        transform: translateY(-10px);
+    }
+
+    .service-img img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .service-content {
+        padding: 20px;
+    }
+    .service-content h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #222;
+    }
+    .service-content p {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.5;
+    }
+    .service-content a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #007BFF;
+        text-decoration: none;
+    }
+    .service-content a:hover {
+        text-decoration: underline;
+    }
+
+    /* Optional: scrollbar styling for horizontal scroll */
+    .services-slider::-webkit-scrollbar {
+        height: 8px;
+    }
+    .services-slider::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+    }

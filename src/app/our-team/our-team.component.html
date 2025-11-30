@@ -1,0 +1,32 @@
+<div class="team-section">
+  <h2>Our Services</h2>
+ <div class="team-section">
+ 
+  <p class="team-intro">
+    Meet our talented team members who drive our success!
+  </p>
+
+  <div class="team-content">
+    <p>
+      Our team is a group of dedicated professionals committed to delivering high-quality services across all areas of our company.
+    </p>
+    <p>
+      Every member brings expertise, creativity, and passion to ensure excellence in every project. From planning and layout solutions, to salon services, and automotive maintenance, our team works seamlessly to meet client needs.
+    </p>
+    <p>
+      Together, we focus on innovation, reliability, and customer satisfaction, making sure every service is delivered with precision and care.
+    </p>
+  </div>
+</div>
+
+
+  <div class="team-container">
+    <!-- Example Team Member -->
+    <div class="team-card" *ngFor="let member of teamMembers">
+      <img [src]="member.photo" [alt]="member.name" class="team-photo">
+      <h3>{{ member.name }}</h3>
+      <h4>{{ member.role }}</h4>
+      <p>{{ member.achievements }}</p>
+    </div>
+  </div>
+</div>

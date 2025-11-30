@@ -1,0 +1,41 @@
+<!-- Header / Navbar -->
+<header>
+  <nav class="navbar custom-navbar navbar-expand-lg">
+    
+    <!-- Logo -->
+    <a class="logo" href="index.html">
+      <img src="assets/logo/propertis.png" alt="Company Logo">
+    </a>
+
+    <!-- Menu Items -->
+    <div class="menu-items">
+      <a class="active" routerLink="/app-home-page">Home</a>
+      <a routerLink="/app-aboutus">About Us</a>
+      <a routerLink="/Services">Industries</a>
+      <a routerLink="/app-our-team">Contact</a>
+    </div>
+
+    <!-- Right aligned Get Started Button -->
+    <a class="get-started" routerLink="/contact">Contact Us</a>
+
+  </nav>
+</header>
+
+<!-- Banner / Slideshow Section -->
+<section class="slideshow-container">
+  <div class="mySlides fade" *ngFor="let slide of slides; let i = index" [style.display]="currentSlideIndex === i ? 'block' : 'none'">
+    <img [src]="slide.img" alt="Slide Image">
+    <div class="caption">{{slide.caption}}</div>
+    <div class="numbertext">{{i + 1}} / {{slides.length}}</div>
+  </div>
+
+  <!-- Dots / indicators -->
+  <div class="dots-container">
+    <span *ngFor="let slide of slides; let i = index" class="dot" [class.active]="currentSlideIndex === i"></span>
+  </div>
+</section>
+
+<!-- Our Team and About Components -->
+ <app-services></app-services>
+<app-our-team></app-our-team>
+<app-aboutus></app-aboutus>
